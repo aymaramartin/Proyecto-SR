@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+.contenedor{
+    font-family: 'Abyssinica SIL', serif;
+    background-image: url(../assets/img/Ultra\ Voilet.jpg); /** fondo pantalla**/
+    background-size: cover;
+    background-repeat: no repeat;
+ }
+
+
+
+
+
+/** Estilos de header**/
+header{   
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.233);
+    display:flex ;
+    flex-direction: column;
+    align-items: center;   
+
+}
+.logo{
+padding: 10px;
+margin: 10px;
+
+
+}
+.nav-bar{
+    list-style-type: none;
+    display: flex;
+    gap: 45px;
+    margin: 10px;  
+   
+}
+.nav-bar li a{
+    text-decoration: none;
+     background-color: rgba(210, 177, 241, 0);
+     color: rgb(0, 0, 0);
+     font-weight: bold;
+     font-size: 25px;     
+}
+.nav-bar li a:hover{
+      color:#ee06e2 ;
+}
+
+.header-mobile{
+    display: none;
+}
+
+.carrete-mobile{
+    display: none;
+}
+
+/** Estilos del main index**/
+.carrete{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "m1 m2 m3 m4 m5 m6"
+    ;
+    gap: 2px;
+    margin-top: 10px;
+}
+.sos{
+    align-items: left;
+    background-image: url(../assets/img/fondosos.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 30px; 
+    margin-left: 20%;
+    margin-bottom: 15px;
+}
+.sos a{
+   text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+     }
+.sos button{
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    color: white;
+    background: linear-gradient(#ee06e2, rgb(230, 88, 171));
+}
+.sos button:hover {
+    background: linear-gradient(#06deee, rgb(88, 166, 230));
+    color: white;
+  }
+  /*
+.bloque{
+    display:flex ;
+    flex-direction: row;
+    margin-top: 25px;
+    margin: 15px;
+    padding:15px ;
+    gap: 100px;
+ }*/
+
+.bloque{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: 1fr;
+grid-template-areas:"ser-index reserva";
+gap:10%;
+margin-top: 25px;
+}
+.esmalte{
+    color: rgb(0, 0, 0);
+    }
+ .esmalte p{
+        font-size: 25px;
+        text-align: center;
+    }
+.esmalt{
+    color: rgb(0, 0, 0);
+ }
+.esmalt p{
+    font-size: 25px;
+     text-align: center;
+ }
+
+.ser-index{
+    display:flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 25px;
+    margin: 15px;
+    padding:15px;
+}
+.reserva{
+    width: 350px;
+    height: 350px;
+    background-color: #ee06e2;
+    border-radius: 50%;
+    position: relative;
+}
+.reserva:hover{
+    transform: scale(1.5);
+    background-color: #06deee;
+}
+.reserva p{
+    font-size: 35px;
+    position: absolute;
+    top:100px;
+     margin-left:25%;
+     margin-top: 45px;
+}
+.reserva a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/**Estilos main servicios**/
+.muestra1{
+    display: flex;
+    flex-direction: row;
+    gap: 9.8px;
+    margin-top: 10px;
+ }
+.muestra2{
+    display:flex;
+    flex-direction: row;
+    gap: 9.8px;
+    margin-top: 10px
+}
+.muestra3{
+    display:flex;
+    flex-direction: row;
+    gap: 9.8px;
+    margin-top: 10px
+} 
+.titulo{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/** MAIN RESERVAS**/
+.container-reser{
+    display:flex ;
+    padding: 10px;
+    margin-top: 10px;
+    gap: 200px;
+    justify-content: center;
+}
+.listado p{
+    font-size: 25px;
+    align-items: center;
+    
+}
+.agenda button{
+    background: linear-gradient(#ee06e2, rgb(230,88,171)); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 100px;
+ }
+ .agenda button {
+    transition-duration: 0.4s;
+  }
+  .agenda button:hover {
+    background: linear-gradient(#06deee, rgb(88, 166, 230));
+    color: white;
+  }
+
+
+
+    
+/** main resgistro**/
+.datos{
+text-align: center;
+margin: 0 auto;
+margin-top: 8%;
+margin-bottom: 90%;
+}
+form li{
+    text-align: center;
+    margin: 0 auto;
+    width: 380px;
+    list-style: none;
+}
+form label{
+    display: inline-block;
+    width: 100px;
+}
+.registrar button{
+        background-color: #ee06e2;
+        border: none;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+}
+
+    
+
+
+
+
+/** main preg. frecun**/
+.categorias{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 23%;    
+}
+
+
+
+
+
+
+/** estilos del footer**/
+footer{
+    background-color: rgba(255, 255, 255, 0.233);
+    color: rgb(0, 0, 0);   
+    display: flex;
+    flex-direction: rox;
+    justify-content: center;
+ }
+
+
+
+/* index tablet*/
+
+
+ @media (max-width: 768px){
+
+
+.nav-bar{
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    margin: 10px; 
+    margin-bottom: 5px;
+}
+
+.nav-bar li a{
+    font-size: 20px;
+
+} 
+
+.carrete{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: (2,1fr);
+    grid-template-areas: 
+    "m1 m2" 
+    "m3 m4"
+    ;
+    gap: 5px;
+    margin-top: 15px;
+    margin-left: 45px;
+   
+}
+
+.m5{
+display: none;
+}
+
+.m6{
+display: none;
+
+}
+.bloque{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:
+    "ser-index" 
+    "reserva";
+    }
+  
+.esmalt{
+    display: none;
+
+}
+
+.ser-index{
+    display:flex;
+    flex-direction: row;
+    margin-top: 15px;
+    gap: 45px;
+    margin-left:25px;
+}
+
+.reserva{
+    width: 350px;
+    height: 350px;
+    background-color: #ee06e2;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 200px;
+    margin-bottom: 100px;
+    margin-top: -60px;
+}
+
+.sos{
+    align-items: left;
+    background-image: url(../assets/img/fondosos.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 30px; 
+    margin-left:1px;
+    margin-bottom: 15px;
+}
+
+.sos a{
+    font-size: 25px;
+}
+
+ }
+
+ /*reservas tablet*/
+
+ @media ( max-width:768px){
+
+    .container-reser{
+        display:flex ;
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 200px;
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .listado{
+        margin-left: 90px;
+
+    }
+    .listado p{
+        font-size: 25px;
+        align-items: center;
+        
+    }
+    .agenda button{
+        background: linear-gradient(#ee06e2, rgb(230,88,171)); 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 25px;
+        margin-left: 95px;
+        margin-bottom: 50px;
+     }
+
+}
+@media (max-width:576px){
+
+.contenedor{
+    background: #A770EF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+
+
+/* index mobile header*/
+.nav-bar{ display: none;} 
+.logo{ display: none;}
+.logo2
+{display:block;}
+
+.header-mobile{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo2" "nav-bar-2";
+    height: 100px;
+    gap: 100px;
+}
+
+.logo2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 250px;
+
+}
+
+.nav-bar-2{
+    display: block;
+    padding: 10px 10px;
+    background: #9c9c9cb7;
+    text-align: left;
+    
+}  
+.nav-bar-2 ul {
+    list-style: none;
+}
+.nav-bar-2 ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.nav-bar-2 li a:hover{
+    color:#ee06e2 ;
+}
+
+ /*index mobile main*/
+.carrete{display: none;}
+
+.carrete-mobile{
+    display: block;
+    background-image: url(../assets/img/carremobisf.png);
+    background-repeat: no-repeat;
+    width: 576px;
+    height: 525px;
+    margin-top: 1%;
+    margin-left: 5%;
+
+}
+
+
+.bloque{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,2fr);
+    grid-template-areas:
+    "ser-index"
+    "reserva"; 
+ }
+.esmalt{
+    display: inline;
+}
+
+
+.ser-index{
+    display:flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-left:10px;
+    align-items: center;
+}
+
+
+.elmaste p{
+    text-align: center;
+}
+
+.reserva{
+    width: 350px;
+    height: 350px;
+    background-color: #ee06e2;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 120px;
+    margin-top: -60px;
+}
+
+/* reservas mobile*/
+
+.container-reser{
+    display:flex ;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 100px;
+    gap: 50px;
+    justify-content: center;
+}
+
+
+
+}
+
+
+
+
+
+
+
+ 
