@@ -1,0 +1,5 @@
+.categorias{
+   @include text(25px,right,black);
+    align-items: center;
+    @include margin(15px,23%,0,0);
+}

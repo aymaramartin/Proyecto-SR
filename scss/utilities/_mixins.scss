@@ -1,0 +1,41 @@
+@mixin flex ($direccion,$aling,$justify){
+    display: flex;
+    flex-direction: $direccion;
+    align-items: $aling;
+    justify-content: $justify;
+}
+
+@mixin text ($size, $alingt,$color,){
+    font-size:$size ;
+    text-align:$alingt;
+    color:$color;
+    text-decoration: none;
+}
+
+@mixin grid($colum,$row){
+    display:grid;
+    grid-template-columns:$colum;
+    grid-template-rows: $row;
+}
+
+@mixin medidasg ($mar,$padd,$ga){
+    margin:$mar;
+    padding:$padd;
+    gap:$ga;
+}
+
+@mixin margin($top,$bottom,$left,$right){
+    margin-top:$top ;
+    margin-bottom: $bottom;
+    margin-left: $left;
+    margin-right:$right;
+}
+
+@mixin anima{
+    border: 1px solid rgba(245, 222, 179, 0);
+    transition: 0.2s;
+    
+    :hover{
+    transform: scale(1.5);
+    }
+}

@@ -1,0 +1,31 @@
+header{   
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.233);
+    @include flex(column,center,none);
+
+    .logo{ 
+        @include medidasg( 10px,10px,0px)  
+    }
+}
+
+.nav-bar{
+    list-style-type: none;
+    display: flex;
+   @include medidasg(10px,0px,45px);
+   
+  li a{
+    text-decoration: none;
+     background-color: rgba(210, 177, 241, 0);
+     color: rgb(0, 0, 0);
+     font-weight: bold;
+     font-size: 25px;     
+    }
+  li a:hover{
+      color:#ee06e2 ;
+}
+
+.header-mobile{display: none;}
+.nav-bar-2{ display: none;}
+.carrete-mobile{display: none;}
+
+} 

@@ -1,0 +1,28 @@
+.container-reser{
+    display:flex ;
+    padding: 10px;
+    margin-top: 10px;
+    gap: 200px;
+    justify-content: center;
+}
+
+.listado p{
+    font-size: 25px;
+    align-items: center;
+    
+}
+
+.agenda button{
+    background: linear-gradient(#ee06e2, rgb(230,88,171)); 
+    border: none;
+    @include text(25px,center,white);
+    padding: 15px 32px;
+    margin-top: 100px;
+ }
+ button {
+    transition-duration: 0.4s;
+  }
+  button:hover {
+    background: linear-gradient(#06deee, rgb(88, 166, 230));
+    color: white;
+  }
