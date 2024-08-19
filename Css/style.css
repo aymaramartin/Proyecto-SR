@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*#93edb9  verde del logo   #6d3579  morado del logo*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
 .contenedor {
-  font-family: "Abyssinica SIL", serif;
-  background-image: url(../assets/img/Ultra\ Voilet.jpg); /** fondo pantalla**/
+  background:#8fbc8bda; /** fondo pantalla**/
   background-size: cover;
   background-repeat: no repeat;
 }
@@ -19,18 +22,19 @@ header {
   align-items: center;
   justify-content: none;
 }
-header .logo {
-  margin: 10px;
-  padding: 10px;
-  gap: 0px;
+ .logo {
+  margin-left: 14%;
+  border-radius: 50%;
+  max-width: 50%;
 }
 
 .nav-bar {
   list-style-type: none;
   display: flex;
   margin: 10px;
-  padding: 0px;
   gap: 45px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .nav-bar li a {
   text-decoration: none;
@@ -40,7 +44,7 @@ header .logo {
   font-size: 25px;
 }
 .nav-bar li a:hover {
-  color: #ee06e2;
+  color: #d887f1 ;
 }
 
 .header-mobile {
@@ -60,41 +64,7 @@ header .logo {
   margin-top: 10px;
 }
 
-.sos {
-  align-items: left;
-  background-image: url(../assets/img/fondosos.png);
-  background-repeat: no-repeat;
-  font-size: 30px;
-  text-align: center;
-  color: black;
-  text-decoration: none;
-  margin-top: 0;
-  margin-bottom: 15px;
-  margin-left: 20%;
-  margin-right: 0;
-}
-.sos a {
-  font-size: 20px;
-  text-align: none;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  align-items: none;
-  justify-content: none;
-}
-.sos button {
-  margin: 10px;
-  padding: 10px;
-  gap: 0;
-  border: none;
-  color: white;
-  background: linear-gradient(#ee06e2, rgb(230, 88, 171));
-}
-.sos button:hover {
-  background: linear-gradient(#06deee, rgb(88, 166, 230));
-  color: white;
-}
+
 
 .bloque {
   display: grid;
@@ -265,14 +235,24 @@ button:hover {
   margin-right: 0;
 }
 
-footer {
+
+.footer_container{
   background-color: rgba(255, 255, 255, 0.233);
-  color: rgb(0, 0, 0);
   display: flex;
-  flex-direction: row;
-  align-items: none;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+  margin: auto;
   justify-content: center;
-}
+  }
+
+ footer a img {
+   
+    display: inline-flex;
+    width: 40px;
+    margin-top: 25px;
+  
+  }
 
 @media (max-width: 768px) {
   .nav-bar {
@@ -282,6 +262,8 @@ footer {
     margin: 10px;
     padding: 0px;
     gap: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px
   }
   .nav-bar li a {
     font-size: 20px;
@@ -321,25 +303,13 @@ footer {
   .reserva {
     width: 350px;
     height: 350px;
-    background-color: #ee06e2;
+    background-color: #d887f1;
     border-radius: 50%;
     position: relative;
     margin-top: -60px;
     margin-bottom: 100px;
     margin-left: 200px;
     margin-right: 0;
-  }
-  .sos {
-    align-items: left;
-    background-image: url(../assets/img/fondosos.png);
-    background-repeat: no-repeat;
-    text-align: center;
-    font-size: 30px;
-    margin-left: 1px;
-    margin-bottom: 15px;
-  }
-  .sos a {
-    font-size: 25px;
   }
   .container-reser {
     display: flex;
