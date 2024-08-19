@@ -94,22 +94,22 @@ header {
 }
 
 .reserva {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   background-color: #9b5997;
   border-radius: 50%;
   position: relative;
+  margin-left: -35%;
 }
-.reserva .reserva:hover {
-  transform: scale(1.5);
+ .reserva:hover {
+  transform: scale(1.2);
   background-color: #5eccd4;
 }
 .reserva p {
   font-size: 35px;
   position: absolute;
-  top: 100px;
-  margin-left: 25%;
-  margin-top: 45px;
+  margin-top: 125px;
+  margin-left: 60px;
 }
 .reserva a {
   text-decoration: none;
