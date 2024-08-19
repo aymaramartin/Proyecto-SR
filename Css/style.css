@@ -7,9 +7,13 @@
   box-sizing: border-box;
 }
 
+body{
+  color: whitesmoke;
+}
 
 .contenedor {
-  background:#8fbc8bda; /** fondo pantalla**/
+ /** background:#8fbc8bda;  fondo pantalla**/
+  background:#000000e1;
   background-size: cover;
   background-repeat: no repeat;
 }
@@ -23,7 +27,7 @@ header {
   justify-content: none;
 }
  .logo {
-  margin-left: 14%;
+  margin-left: 10%;
   border-radius: 50%;
   max-width: 50%;
 }
@@ -35,6 +39,7 @@ header {
   gap: 45px;
   margin-top: 50px;
   margin-bottom: 50px;
+  
 }
 .nav-bar li a {
   text-decoration: none;
@@ -42,6 +47,7 @@ header {
   color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 25px;
+  color: whitesmoke;
 }
 .nav-bar li a:hover {
   color: #d887f1 ;
@@ -62,9 +68,49 @@ header {
   grid-template-areas: "m1 m2 m3 m4 m5 m6";
   gap: 2px;
   margin-top: 10px;
+  margin-left: 3%;
 }
 
+.carrete :hover{
+  transform: scale(1.2);
+}
 
+.container_p{
+  width:90%; /*no ocupe el total de la pantalla*/
+  max-width:1200px;/*ancho maximo de 1200px*/
+  margin:0 auto;/*centramos vertialmente*/
+  overflow: hidden;/*escoder lo que sobresalga*/
+  padding:var(--padding-container);
+  margin-top: 40px;
+}
+
+.picture{
+ 
+  background-size: 20px 20px;
+  background-position: 0 0,10px 10px;
+  overflow: hidden;
+  }
+  
+  .container_pic{
+      display:grid ;
+      grid-template-columns: 1fr 1fr;
+      gap:1em;
+      align-items: center;
+  }
+  
+  .picture_1{
+  max-width: 500px;
+  }
+  
+  .paragraph_pic{
+      line-height: 1.7;
+      margin-bottom: 15px;
+  
+  }
+  .img_pic{
+      width: 100%;
+      display: block;
+  }
 
 .bloque {
   display: grid;
@@ -93,148 +139,36 @@ header {
   gap: 25px;
 }
 
-.reserva {
-  width: 250px;
-  height: 250px;
-  background-color: #9b5997;
-  border-radius: 50%;
-  position: relative;
-  margin-left: -30%;
-}
- .reserva:hover {
-  transform: scale(1.2);
-  background-color: #93edb9;
-}
-.reserva p {
-  font-size: 30px;
-  position: absolute;
-  margin-top: 110px;
-  margin-left: 50px;
-}
-.reserva a {
-  text-decoration: none;
-  color: black;
-}
-
-.contenedor-serv {
-  display: grid;
-  grid-template-columns: repeat(3, 423px);
-  grid-template-rows: repeat(3, 423px);
-  grid-template-areas: "esm-1  nai-1  esc-1" "esm-2  nai-2  esc-2" "esm-3  nai-3  esc-3";
-  margin-top: 50px;
-  margin-bottom: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
-  column-gap: 15px;
-  row-gap: 15px;
-  justify-content: center;
-}
-
-.esm-1 .esm-2 .esm-3 .esm-4 {
-  border: 1px solid rgba(245, 222, 179, 0);
-  transition: 0.2s;
-}
-.esm-1 .esm-2 .esm-3 .esm-4 :hover {
-  transform: scale(1.5);
-}
-
-.nai-1 .nai-2 .nai-3 .nai-4 {
-  border: 1px solid rgba(245, 222, 179, 0);
-  transition: 0.2s;
-}
-.nai-1 .nai-2 .nai-3 .nai-4 :hover {
-  transform: scale(1.5);
-}
-
-.esc-1 .esc-2 .esc-3 .esc-4 {
-  border: 1px solid rgba(245, 222, 179, 0);
-  transition: 0.2s;
-}
-.esc-1 .esc-2 .esc-3 .esc-4 :hover {
-  transform: scale(1.5);
-}
-
-.contenedor-serv-tablet {
-  display: none;
-}
-
-.contenedor-serv-mobile {
-  display: none;
-}
-
-.container-reser {
-  display: flex;
-  padding: 10px;
-  margin-top: 10px;
-  gap: 200px;
-  justify-content: center;
-}
-
-.listado p {
-  font-size: 25px;
-  align-items: center;
-}
-
-.agenda button {
-  background: linear-gradient(#ee06e2, rgb(230, 88, 171));
-  border: none;
-  font-size: 25px;
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  padding: 15px 32px;
-  margin-top: 100px;
-}
-
-button {
-  transition-duration: 0.4s;
-}
-
-button:hover {
-  background: linear-gradient(#06deee, rgb(88, 166, 230));
-  color: white;
-}
-
-.datos {
-  text-align: center;
-  margin-top: 8%;
-  margin-bottom: 90%;
-  margin-left: 0;
-  margin-right: 0;
-  margin: 0 auto;
-}
-.datos form li {
-  text-align: center;
-  margin: 0 auto;
-  width: 380px;
-  list-style: none;
-}
-.datos label {
+.button_slide {
+  color: #FFF;
+  border: 2px solid #d887f1;
+  border-radius: 0px;
+  padding: 18px 36px;
   display: inline-block;
-  width: 100px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #d887f1;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
 }
 
-.registrar button {
-  background-color: #ee06e2;
-  border: none;
-  font-size: 15px;
+.slide_left:hover {
+  box-shadow: inset 0 0 0 50px #d887f1;
+}
+
+#outer {
+  width: 364px;
+  margin-left: -50%;
+  margin-top: 40%;
   text-align: center;
-  color: white;
-  text-decoration: none;
 }
 
-.categorias {
-  font-size: 25px;
-  text-align: right;
-  color: black;
+#outer a{
   text-decoration: none;
-  align-items: center;
-  margin-top: 15px;
-  margin-bottom: 23%;
-  margin-left: 0;
-  margin-right: 0;
+  color: whitesmoke;
 }
-
 
 .footer_container{
   background-color: rgba(255, 255, 255, 0.233);
@@ -253,6 +187,19 @@ button:hover {
     margin-top: 25px;
   
   }
+
+.saw{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.img_mant{
+  width: 100%;
+  height: 100%;
+  
+}
+  
+ 
 
 @media (max-width: 768px) {
   .nav-bar {
@@ -298,50 +245,6 @@ button:hover {
     margin-top: 15px;
     margin-bottom: 0px;
     margin-left: 25px;
-    margin-right: 0;
-  }
-  .reserva {
-    width: 350px;
-    height: 350px;
-    background-color: #d887f1;
-    border-radius: 50%;
-    position: relative;
-    margin-top: -60px;
-    margin-bottom: 100px;
-    margin-left: 200px;
-    margin-right: 0;
-  }
-  .container-reser {
-    display: flex;
-    flex-direction: column;
-    align-items: none;
-    justify-content: center;
-    margin: 0;
-    padding: 10px;
-    gap: 50px;
-    margin-top: 10px;
-    margin-bottom: 0;
-    margin-left: 200px;
-    margin-right: 0;
-  }
-  .listado {
-    margin-left: 90px;
-  }
-  .listado p {
-    font-size: 25px;
-    align-items: center;
-  }
-  .agenda button {
-    background: linear-gradient(#ee06e2, rgb(228, 114, 180));
-    border: none;
-    padding: 15px 32px;
-    font-size: 25px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    margin-top: 0;
-    margin-bottom: 50px;
-    margin-left: 95px;
     margin-right: 0;
   }
 }
@@ -405,15 +308,6 @@ button:hover {
     margin-top: 1%;
     margin-left: 5%;
   }
-  .bloque {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "ser-index" "reserva";
-  }
-  .esmalt {
-    display: inline;
-  }
   .nav-bar-2 a {
     color: inherit;
     text-decoration: none;
@@ -464,40 +358,7 @@ button:hover {
     gap: 35px;
     margin-left: 10px;
   }
-  .elmaste p {
-    text-align: center;
-  }
-  .reserva {
-    width: 350px;
-    height: 350px;
-    background-color: #ee06e2;
-    border-radius: 50%;
-    position: relative;
-    margin-left: 120px;
-    margin-top: -60px;
-  }
-  .contenedor-serv-tablet {
-    display: none;
-  }
-  .contenedor-serv-mobile {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-  }
-  .carrusel img {
-    flex: 0 0 100%;
-    object-fit: cover;
-    scroll-snap-align: center;
-  }
-  .container-reser {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 100px;
-    gap: 50px;
-    justify-content: center;
-  }
+ 
 }
 
 /*# sourceMappingURL=style.css.map */
